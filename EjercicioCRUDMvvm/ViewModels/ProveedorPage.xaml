@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EjercicioCRUDMvvm.Views"
+             xmlns:viewModels="clr-namespace:EjercicioCRUDMvvm.ViewModels"
+             x:Class="EjercicioCRUDMvvm.Views.ProveedorPage">
+    <ContentPage.BindingContext>
+        <viewModels:ProveedorViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Padding="10">
+        <Label Text="Proveedores" FontSize="24" HorizontalOptions="Center" />
+
+        <ListView ItemsSource="{Binding Proveedores}"
+                  SelectedItem="{Binding SelectedProveedor}"
+                  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nombre}" Detail="{Binding Ciudad}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Entry Placeholder="Nombre" Text="{Binding SelectedProveedor.Nombre}" />
+        <Entry Placeholder="Dirección" Text="{Binding SelectedProveedor.Direccion}" />
+        <Entry Placeholder="Ciudad" Text="{Binding SelectedProveedor.Ciudad}" />
+        <Entry Placeholder="Teléfono" Text="{Binding SelectedProveedor.Telefono}" />
+        <Entry Placeholder="Email" Text="{Binding SelectedProveedor.Email}" Keyboard="Email" />
+
+        <Button Text="Guardar" Command="{Binding SaveCommand}" />
+        <Button Text="Eliminar" Command="{Binding DeleteCommand}" />
+    </StackLayout>
+</ContentPage>

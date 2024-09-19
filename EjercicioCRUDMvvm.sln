@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioCRUDMvvm", "EjercicioCRUDMvvm\EjercicioCRUDMvvm.csproj", "{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ACBC589E-85F0-48B5-9815-CADC0224CB58}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF40307-E682-4ECF-BE5B-14E7E9AABC89}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79B7789F-E18B-406E-B560-913661F472CE}
+	EndGlobalSection
+EndGlobal
